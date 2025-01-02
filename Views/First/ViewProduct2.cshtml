@@ -1,0 +1,13 @@
+@{
+    var product = ViewData["Product"] as ProductModel;
+}
+
+<p>@ViewData["Title"]</p>
+<div class="card bg-primary text-white">
+    <h1 class="card-header">Điện thoại @product?.Name</h1>
+    <div class="card-body">
+        <p class="card-text">
+            Giá: @product?.Price
+        </p>
+    </div>
+</div>
